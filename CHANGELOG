@@ -1,5 +1,10 @@
 Date        Changes
 ----------- --------------------------------------------------------------------
+Jul 03 2012 - Adds UDP socket support to Wirefree library
+            - Adds sample sketches to demonstrate UDP server and client usage
+            - Modifications to WifiClient and WifiServer APIs to specify the
+              socket protocol
+
 Jul 05 2011 - Initial version of WebServer code.
             - Modifications to webpage and HTTP output need to be done in gs.cpp
             - This is an interim fix until the code that is compatible with the
