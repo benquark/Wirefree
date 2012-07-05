@@ -193,16 +193,11 @@ uint8_t GSClass::send_cmd(uint8_t cmd)
 		break;
 	}
 	case CMD_TCP_LISTEN:
+	case CMD_UDP_LISTEN:
 	{
 		String cmd_buf = cmd_str + String((unsigned int)this->sock_table[socket_num].port);
 		Serial.println(cmd_buf);
 		break;
-	}
-	case CMD_UDP_LISTEN:
-	{
-	    String cmd_buf = cmd_str + String((unsigned int)this->sock_table[socket_num].port);
-	    Serial.println(cmd_buf);
-	    break;
 	}
 	default:
 		break;
